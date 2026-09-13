@@ -27,7 +27,7 @@ const skills = [
     name: "Content Calendar",
     description: "",
     media: [
-      { type: "photo", src: "/gallery/page-revamp/photo_16_2026-08-31_13-16-55.jpg", alt: "Content calendar sample" },
+      { type: "photo", src: "/gallery/content-calender/photo_16_2026-08-31_13-16-55.jpg", alt: "Content calendar sample" },
     ],
   },
   {
@@ -50,13 +50,13 @@ const skills = [
     name: "O Gadgets",
     description: "",
     media: [
-      { type: "photo", src: "/gallery/faco/photo_1_2026-08-31_13-16-53.jpg", alt: "O Gadgets sample" },
-      { type: "photo", src: "/gallery/faco/photo_2_2026-08-30_03-47-24.jpg", alt: "O Gadgets sample" },
-      { type: "photo", src: "/gallery/faco/photo_3_2026-08-30_03-47-24.jpg", alt: "O Gadgets sample" },
-      { type: "photo", src: "/gallery/faco/photo_4_2026-08-31_13-16-54.jpg", alt: "O Gadgets sample" },
-      { type: "photo", src: "/gallery/faco/photo_5_2026-08-31_13-16-54.jpg", alt: "O Gadgets sample" },
-      { type: "photo", src: "/gallery/faco/photo_6_2026-08-31_13-16-54.jpg", alt: "O Gadgets sample" },
-      { type: "photo", src: "/gallery/faco/photo_9_2026-08-31_13-16-54.jpg", alt: "O Gadgets sample" },
+      { type: "photo", src: "/gallery/o-gadgets/photo_1_2026-08-31_13-16-53.jpg", alt: "O Gadgets sample" },
+      { type: "photo", src: "/gallery/o-gadgets/photo_2_2026-08-30_03-47-24.jpg", alt: "O Gadgets sample" },
+      { type: "photo", src: "/gallery/o-gadgets/photo_3_2026-08-30_03-47-24.jpg", alt: "O Gadgets sample" },
+      { type: "photo", src: "/gallery/o-gadgets/photo_4_2026-08-30_03-47-25.jpg", alt: "O Gadgets sample" },
+      { type: "photo", src: "/gallery/o-gadgets/photo_5_2026-08-30_03-45-58.jpg", alt: "O Gadgets sample" },
+      { type: "photo", src: "/gallery/o-gadgets/photo_6_2026-08-30_03-45-58.jpg", alt: "O Gadgets sample" },
+      { type: "photo", src: "/gallery/o-gadgets/photo_9_2026-08-30_03-45-58.jpg", alt: "O Gadgets sample" },
     ],
   },
   {
