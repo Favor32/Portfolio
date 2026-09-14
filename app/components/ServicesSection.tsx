@@ -1,4 +1,4 @@
-import { FaHashtag, FaMapSigns, FaVideo, FaCalendarAlt, FaChartLine, FaRobot } from "react-icons/fa";
+import { FaHashtag, FaMapSigns, FaVideo, FaCalendarAlt, FaChartLine, FaRobot, FaBullhorn } from "react-icons/fa";
 
 const services = [
   { title: "Content Strategy", description: "Developing a clear content direction based on the brand, audience and business objectives.", icon: FaMapSigns },
@@ -6,6 +6,7 @@ const services = [
   { title: "Content Planning", description: "Developing content pillars, topics and calendars that keep the brand organised and consistent.", icon: FaCalendarAlt },
   { title: "Analytics & Reporting", description: "Tracking performance and turning social media data into useful insights.", icon: FaChartLine },
   { title: "AI & Creative Content", description: "Using AI powered creative tools to support ideation, visual development and video creation.", icon: FaRobot },
+  { title: "Ad Campaign Management", description: "Planning, setting up and managing paid ad campaigns to boost reach, drive engagement and grow the right audience.", icon: FaBullhorn },
 ];
 
 export default function ServicesSection() {

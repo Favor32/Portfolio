@@ -43,7 +43,7 @@ export default function ContactSection() {
           </div>
 
           <form
-            action="https://formspree.io/f/YOUR_FORM_ID"
+            action="https://formspree.io/f/mrpgelyk"
             method="POST"
             className="space-y-5 bg-white/50 rounded-2xl p-8"
           >
