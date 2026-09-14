@@ -8,7 +8,7 @@ export default function AIVideoCreationIcon({ size = 28, className = "" }: { siz
       height={size}
       className={className}
       viewBox="0 0 122.88 93.04"
-      style={{ enableBackground: "new 0 0 122.88 93.04" }}
+      enableBackground="new 0 0 122.88 93.04"
       xmlSpace="preserve"
     >
       <g>

@@ -8,7 +8,7 @@ export default function MetaBusinessSuiteIcon({ size = 28, className = "" }: { s
       height={size}
       className={className}
       viewBox="0 0 122.88 100.54"
-      style={{ enableBackground: "new 0 0 122.88 100.54" }}
+      enableBackground="new 0 0 122.88 100.54"
       xmlSpace="preserve"
     >
       <g>
