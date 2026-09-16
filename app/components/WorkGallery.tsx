@@ -109,8 +109,8 @@ export default function WorkGallery() {
     <div className="space-y-16 mt-16">
       {skills.map((skill) => (
         <div key={skill.name}>
-          <h3 className="font-serif font-bold text-xl">{skill.name}</h3>
-          {skill.description && <p className="text-muted text-sm mb-4">{skill.description}</p>}
+          <h3 className="font-serif text-accent font-bold text-xl">{skill.name}</h3>
+          {skill.description && <p className="text-sm mb-4">{skill.description}</p>}
           <div className="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 mt-2">
             {skill.media.map((item, i) => (
               <button
