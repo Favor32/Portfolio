@@ -11,15 +11,15 @@ const highlights = [
 export default function Home() {
   return (
     <>
-      <section className="max-w-[95rem] mx-auto px-6 md:px-8 py-16 md:py-24">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-stretch">
-          <HeroText />
+      <section className="max-w-[95rem] mx-auto px-6 md:px-8 py-16 md:py-24 min-h-[600px] md:min-h-[700px]">
+  <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-stretch h-full">
+    <HeroText />
 
-          <div className="relative w-full aspect-[3/4] lg:aspect-auto lg:h-full">
-            <Image src="/hero.png" alt="Paul Omowunmi Bisola" fill sizes="480px" className="object-contain" priority />
-          </div>
-        </div>
-      </section>
+    <div className="relative w-full aspect-[3/4] lg:aspect-auto lg:h-full">
+      <Image src="/hero.jpg" alt="Paul Omowunmi Bisola" fill sizes="480px" className="object-cover object-top" priority />
+    </div>
+  </div>
+</section>
 
       <section className="w-full bg-surface py-16 md:py-24">
         <div className="max-w-[95rem] mx-auto px-6 md:px-8">
