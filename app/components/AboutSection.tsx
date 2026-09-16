@@ -17,10 +17,10 @@ const focus = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="max-w-[95rem] mx-auto px-8 py-24">
+    <section id="about" className="max-w-[95rem] mx-auto px-6 md:px-8 py-16 md:py-24">
       <div className="grid lg:grid-cols-2 gap-12 items-stretch">
         <div>
-          <h1 className=" text-accent font-serif font-bold text-4xl">Paul Omowunmi Bisola</h1>
+          <h1 className="font-serif font-bold text-3xl md:text-4xl">Paul Omowunmi Bisola</h1>
           <p className="text-accent font-medium mt-4 italic">Social Media Manager</p>
 
           <p className="mt-6  font-bold italic leading-relaxed max-w-md">
@@ -47,7 +47,7 @@ export default function AboutSection() {
 </div>
 
           
-        <h2 className="font-serif font-bold text-3xl text-accent mt-15 mb-6 italic">About Me</h2>
+        <h2 className="font-serif font-bold text-xl md:text-2xl text-accent mt-10 mb-6">About Me</h2>
 
           <p className="text-foreground leading-relaxed">
   I'm Paul Omowunmi Bisola, a Social Media Manager focused on
