@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import TypewriterText from "./components/TypewriterText";
 
 const highlights = [
   { title: "Social Media Management", description: "Consistent, organised and engaging presence." },
@@ -11,16 +12,15 @@ export default function Home() {
   return (
     <>
       <section className="max-w-[95rem] mx-auto px-6 md:px-8 py-16 md:py-24">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-stretch">
           <div>
             <h1 className="font-serif font-bold text-accent text-4xl md:text-5xl">
               Paul Omowunmi Bisola
             </h1>
             <p className="text-accent font-medium mt-2 text-lg">Social Media Manager</p>
-            <p className="mt-6 text-muted leading-relaxed max-w-md">
-              Building intentional digital presence for businesses that want
-              to be seen, understood and remembered.
-            </p>
+            <p className="mt-6 text-muted leading-relaxed max-w-md min-h-[4.5rem]">
+  <TypewriterText text="Building intentional digital presence for businesses that want to be seen, understood and remembered." />
+</p>
             <div className="mt-8 flex gap-4">
               <Link
                 href="/work"
@@ -37,9 +37,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative w-full h- min-h-[280px] md:min-h-[420px]">
-            <Image src="/hero.png" alt="Paul Omowunmi Bisola" fill sizes="480px" className="object-cover object-top" priority />
-          </div>
+          <div className="relative w-full aspect-[3/4] lg:aspect-auto lg:h-full">
+  <Image src="/hero.jpg" alt="Paul Omowunmi Bisola" fill sizes="480px" className="object-cover object-top" priority />
+</div>
         </div>
       </section>
 
