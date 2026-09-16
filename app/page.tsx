@@ -32,7 +32,7 @@ export default function Home() {
 >
   <h3 className="font-medium">{item.title}</h3>
   <p className="text-sm text-muted mt-2 leading-relaxed">{item.description}</p>
-</div>>
+</div>
             ))}
           </div>
           <Link href="/services" className="inline-block mt-8 text-accent font-medium hover:underline">
