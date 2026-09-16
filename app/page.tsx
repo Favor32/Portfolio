@@ -16,7 +16,7 @@ export default function Home() {
           <HeroText />
 
           <div className="relative w-full aspect-[3/4] lg:aspect-auto lg:h-full">
-            <Image src="/hero.png" alt="Paul Omowunmi Bisola" fill sizes="480px" className="object-cover object-top" priority />
+            <Image src="/hero.jpg" alt="Paul Omowunmi Bisola" fill sizes="480px" className="object-contain" priority />
           </div>
         </div>
       </section>
@@ -26,10 +26,13 @@ export default function Home() {
           <h2 className="font-serif font-bold text-2xl md:text-3xl text-accent">A Quick Look</h2>
           <div className="grid sm:grid-cols-3 gap-5 mt-10">
             {highlights.map((item) => (
-              <div key={item.title} className="bg-white/50 rounded-2xl p-5">
-                <h3 className="font-medium">{item.title}</h3>
-                <p className="text-sm text-muted mt-2 leading-relaxed">{item.description}</p>
-              </div>
+             <div
+  key={item.title}
+  className="bg-card rounded-2xl p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_-5px_var(--accent)]"
+>
+  <h3 className="font-medium">{item.title}</h3>
+  <p className="text-sm text-muted mt-2 leading-relaxed">{item.description}</p>
+</div>>
             ))}
           </div>
           <Link href="/services" className="inline-block mt-8 text-accent font-medium hover:underline">
