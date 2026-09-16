@@ -9,8 +9,8 @@ const socialLinks = [
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="w-full bg-surface py-24">
-      <div className="max-w-[95rem] mx-auto px-8">
+    <section id="contact" className="w-full bg-surface py-16 md:py-24">
+  <div className="max-w-[95rem] mx-auto px-6 md:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="font-serif font-bold text-4xl text-accent">

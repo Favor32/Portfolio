@@ -3,7 +3,7 @@ import WorkGallery from "./WorkGallery";
 
 export default function WorkSection() {
   return (
-    <section id="work" className="max-w-[95rem] mx-auto px-8 py-24">
+   <section id="work" className="max-w-[95rem] mx-auto px-6 md:px-8 py-16 md:py-24">
       <h2 className="font-serif font-bold text-3xl text-accent">My Work</h2>
 
       <div className="bg-white/50 rounded-2xl p-7 mt-10">

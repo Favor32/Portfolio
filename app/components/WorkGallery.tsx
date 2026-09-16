@@ -80,7 +80,7 @@ const skills = [
     name: "AI & Creative Content",
     description: "AI powered creative tools supporting ideation and visual development",
     media: [
-      { type: "photo", src: "/gallery/ai-content/photo_7_2026-08-30_03-47-26.jpg", alt: "AI-generated content sample" },
+     
       { type: "video", src: "/gallery/ai-content/IMG_4826.MP4", alt: "AI-generated content sample" },
     ],
   },
