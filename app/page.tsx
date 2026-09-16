@@ -16,7 +16,7 @@ export default function Home() {
           <HeroText />
 
           <div className="relative w-full aspect-[3/4] lg:aspect-auto lg:h-full">
-            <Image src="/hero.jpg" alt="Paul Omowunmi Bisola" fill sizes="480px" className="object-contain" priority />
+            <Image src="/hero.png" alt="Paul Omowunmi Bisola" fill sizes="480px" className="object-contain" priority />
           </div>
         </div>
       </section>
