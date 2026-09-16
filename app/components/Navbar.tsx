@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <nav className="border-b-2 border-border w-full px-6 md:px-8 py-4 flex items-center justify-between sticky top-0 bg-background/90 backdrop-blur z-50">
-      <Link href="/" className="font-serif font-semibold text-lg text-foreground">
+      <Link href="/" className="font-serif font-semibold text-accent text-lg text-foreground">
         Social Media Management
       </Link>
 
