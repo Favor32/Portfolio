@@ -67,12 +67,12 @@ export default function AboutSection() {
 </p>
         </div>
 
-        <div className="relative w-200 h-full min-h-[420px] overflow-hidden">
+     <div className="relative w-full aspect-[3/4] lg:aspect-auto lg:h-full overflow-hidden">
   <Image
     src="/profile.png"
     alt="Paul Omowunmi Bisola"
     fill
-    className="object-contain transition-transform duration-500 hover:scale-105"
+    className="object-cover object-top transition-transform duration-500 hover:scale-105"
     priority
   />
 </div>

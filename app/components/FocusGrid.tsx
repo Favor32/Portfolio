@@ -23,7 +23,7 @@ export default function FocusGrid() {
         <div
           key={item.title}
           style={{ animationDelay: `${index * 400}ms` }}
-          className={`bg-white/50 rounded-2xl p-4 transition-opacity duration-1000 ${
+          className={`bg-card rounded-2xl p-4 transition-opacity duration-1000 ${
             visible ? "opacity-100 animate-gentle-bounce" : "opacity-0"
           }`}
         >

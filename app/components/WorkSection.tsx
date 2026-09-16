@@ -6,7 +6,7 @@ export default function WorkSection() {
    <section id="work" className="max-w-[95rem] mx-auto px-6 md:px-8 py-16 md:py-24">
       <h2 className="font-serif font-bold text-3xl text-accent">My Work</h2>
 
-      <div className="bg-white/50 rounded-2xl p-7 mt-10">
+      <div className="bg-card rounded-2xl p-7 mt-10">
         <h3 className="font-serif font-bold text-xl">FACO</h3>
         <p className="text-sm text-muted mb-4">
           Digital Skills & Education — Role: Social Media Manager

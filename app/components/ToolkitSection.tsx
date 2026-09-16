@@ -28,7 +28,7 @@ export default function ToolkitSection() {
           {tools.map((tool) => {
             const Icon = tool.icon;
             return (
-              <div key={tool.name} className="shrink-0 snap-start w-56 bg-white/50 rounded-2xl p-5">
+              <div key={tool.name} className="shrink-0 snap-start w-56 bg-card rounded-2xl p-5">
                 {tool.name === "Canva" ? (
                   <Image src="/icons/canva.png" alt="Canva" width={28} height={28} className="mb-5" />
                 ) : (

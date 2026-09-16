@@ -45,7 +45,7 @@ export default function ContactSection() {
           <form
             action="https://formspree.io/f/mrpgelyk"
             method="POST"
-            className="space-y-5 bg-white/50 rounded-2xl p-8"
+            className="space-y-5 bg-card rounded-2xl p-8"
           >
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-1.5">
@@ -56,7 +56,7 @@ export default function ContactSection() {
                 id="name"
                 name="name"
                 required
-                className="w-full bg-background rounded-xl px-4 py-3 border border-border focus:outline-none focus:ring-2 focus:ring-accent transition-shadow"
+                className="w-full bg-card rounded-xl px-4 py-3 border border-border focus:outline-none focus:ring-2 focus:ring-accent transition-shadow"
               />
             </div>
 

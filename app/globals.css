@@ -2,12 +2,13 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #f4eddd;
-  --foreground: #2b1b12;
-  --muted: #8b7355;
-  --accent: #7a3417;
-  --border: #e2d5be;
-  --surface: #352102;
+  --background: #681f04;
+  --foreground: #faf3e6;
+  --muted: #f0d9be;
+  --accent: #f2a93b;
+  --border: #8f3414;
+  --surface: #8f3414;
+  --card: rgba(0, 0, 0, 0.18);
 }
 
 @theme inline {
@@ -17,6 +18,7 @@
   --color-accent: var(--accent);
   --color-border: var(--border);
   --color-surface: var(--surface);
+  --color-card: var(--card);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-serif: var(--font-fraunces);

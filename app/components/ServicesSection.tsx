@@ -17,7 +17,7 @@ export default function ServicesSection() {
         {services.map((service) => {
           const Icon = service.icon;
           return (
-            <div key={service.title} className="bg-white/50 rounded-2xl p-5">
+            <div key={service.title} className="bg-card rounded-2xl p-5">
               <Icon size={28} className="text-accent mb-3" />
               <h3 className="font-medium">{service.title}</h3>
               <p className="text-muted text-sm mt-2 italic leading-relaxed">{service.description}</p>
