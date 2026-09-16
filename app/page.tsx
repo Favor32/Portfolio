@@ -13,7 +13,7 @@ export default function Home() {
       <section className="max-w-[95rem] mx-auto px-6 md:px-8 py-16 md:py-24">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div>
-            <h1 className="font-serif font-bold text-4xl md:text-5xl">
+            <h1 className="font-serif font-bold text-accent text-4xl md:text-5xl">
               Paul Omowunmi Bisola
             </h1>
             <p className="text-accent font-medium mt-2 text-lg">Social Media Manager</p>

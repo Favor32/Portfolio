@@ -14,7 +14,7 @@ const tools = [
 
 export default function ToolkitSection() {
   return (
-    <section id="toolkit" className="w-full bg-surface py-24">
+   <section id="toolkit" className="w-full min-h-screen bg-surface py-16 md:py-24">
       <div className="max-w-[95rem] mx-auto px-8">
         <h2 className="font-serif font-bold text-3xl text-accent">Tools I Use</h2>
 
