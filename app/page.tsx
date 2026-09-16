@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <section className="max-w-[95rem] mx-auto px-6 md:px-8 py-16 md:py-24">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <div>
             <h1 className="font-serif font-bold text-4xl md:text-5xl">
               Paul Omowunmi Bisola
@@ -37,8 +37,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative w-full h-full min-h-[280px] md:min-h-[420px]">
-            <Image src="/hero.png" alt="Paul Omowunmi Bisola" fill sizes="480px" className="object-cover" priority />
+          <div className="relative w-full h- min-h-[280px] md:min-h-[420px]">
+            <Image src="/hero.png" alt="Paul Omowunmi Bisola" fill sizes="480px" className="object-cover object-top" priority />
           </div>
         </div>
       </section>
