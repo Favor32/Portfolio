@@ -7,7 +7,7 @@ import MediaLightbox from "./MediaLightbox";
 const skills = [
   {
     name: "Bio Revamp",
-    description: "",
+    description: "Refreshed profile bios written to communicate brand identity clearly and attract the right audience.",
     media: [
       { type: "photo", src: "/gallery/bio-revamp/photo_7_2026-08-30_03-44-48.jpg", alt: "Bio revamp sample" },
       { type: "photo", src: "/gallery/bio-revamp/photo_8_2026-08-30_03-43-54.jpg", alt: "Bio revamp sample" },
@@ -17,7 +17,7 @@ const skills = [
   },
   {
     name: "Page Revamp",
-    description: "",
+    description: "Full page makeovers covering visuals, layout and messaging for a more polished brand presence",
     media: [
       { type: "photo", src: "/gallery/page-revamp/photo_6_2026-08-30_03-43-53.jpg", alt: "Page revamp sample" },
       { type: "photo", src: "/gallery/page-revamp/photo_11_2026-08-30_03-43-54.jpg", alt: "Page revamp sample" },
@@ -25,14 +25,14 @@ const skills = [
   },
   {
     name: "Content Calendar",
-    description: "",
+    description: "Structured content calendars keeping posting consistent, organised and aligned with strategy",
     media: [
       { type: "photo", src: "/gallery/content-calender/photo_16_2026-08-31_13-16-55.jpg", alt: "Content calendar sample" },
     ],
   },
   {
     name: "Carousel",
-    description: "",
+    description: "Multi-slide carousel posts designed to educate, engage and hold attention scroll after scroll.",
     media: [
       { type: "photo", src: "/gallery/carousel/photo_3_2026-08-31_13-16-54.jpg", alt: "FACO sample" },
       { type: "photo", src: "/gallery/carousel/photo_4_2026-08-31_13-16-54.jpg", alt: "FACO sample" },
@@ -48,7 +48,7 @@ const skills = [
   },
   {
     name: "Carousels",
-    description: "",
+    description: "Multi-slide carousel posts designed to educate, engage and hold attention scroll after scroll.",
     media: [
       { type: "photo", src: "/gallery/carousels/photo_3_2026-08-30_03-47-24.jpg", alt: "O Gadgets sample" },
       { type: "photo", src: "/gallery/carousels/photo_4_2026-08-30_03-47-25.jpg", alt: "O Gadgets sample" },
@@ -86,7 +86,7 @@ const skills = [
   },
   {
   name: "Testimonials",
-    description: "",
+    description: "Client testimonials turned into shareable social proof that builds trust with new audiences",
     media: [
       { type: "photo", src: "/gallery/testimonials/photo_7_2026-08-30_03-47-26.jpg", alt: "Testimonials sample" },
     ],
