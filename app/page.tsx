@@ -37,8 +37,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative w-full h-full min-h-[280px] md:min-h-[420px] rounded-3xl overflow-hidden">
-            <Image src="/hero.jpg" alt="Paul Omowunmi Bisola" fill sizes="480px" className="object-cover" priority />
+          <div className="relative w-full h-full min-h-[280px] md:min-h-[420px]">
+            <Image src="/hero.png" alt="Paul Omowunmi Bisola" fill sizes="480px" className="object-cover" priority />
           </div>
         </div>
       </section>
