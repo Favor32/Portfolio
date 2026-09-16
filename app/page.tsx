@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import TypewriterText from "./components/TypewriterText";
-import HeroText from "./components/HeroText"
+import HeroText from "./components/HeroText";
 
 const highlights = [
   { title: "Social Media Management", description: "Consistent, organised and engaging presence." },
@@ -13,12 +12,13 @@ export default function Home() {
   return (
     <>
       <section className="max-w-[95rem] mx-auto px-6 md:px-8 py-16 md:py-24">
-        <HeroText />
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-stretch">
+          <HeroText />
 
           <div className="relative w-full aspect-[3/4] lg:aspect-auto lg:h-full">
-  <Image src="/hero.jpg" alt="Paul Omowunmi Bisola" fill sizes="480px" className="object-cover object-top" priority />
-</div>
-      
+            <Image src="/hero.jpg" alt="Paul Omowunmi Bisola" fill sizes="480px" className="object-cover object-top" priority />
+          </div>
+        </div>
       </section>
 
       <section className="w-full bg-surface py-16 md:py-24">

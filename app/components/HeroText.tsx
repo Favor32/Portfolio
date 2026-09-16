@@ -10,12 +10,12 @@ export default function HeroText() {
   return (
     <div>
       <h1 className="font-serif font-bold text-4xl md:text-5xl">
-        <TypewriterText text="Paul Omowunmi Bisola" speed={40} onDone={() => setStep(1)} />
+        <TypewriterText text="Paul Omowunmi Bisola" speed={100} onDone={() => setStep(1)} />
       </h1>
 
       {step >= 1 && (
         <p className="text-accent font-medium mt-2 text-lg">
-          <TypewriterText text="Social Media Manager" speed={40} onDone={() => setStep(2)} />
+          <TypewriterText text="Social Media Manager" speed={100} onDone={() => setStep(2)} />
         </p>
       )}
 
@@ -23,7 +23,7 @@ export default function HeroText() {
         <p className="mt-6 text-muted leading-relaxed max-w-md">
           <TypewriterText
             text="Building intentional digital presence for businesses that want to be seen, understood and remembered."
-            speed={20}
+            speed={60}
             onDone={() => setStep(3)}
           />
         </p>
