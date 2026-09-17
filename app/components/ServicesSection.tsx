@@ -30,8 +30,9 @@ export default function ServicesSection() {
             <div
               key={service.title}
               style={{ transitionDelay: `${index * 400}ms` }}
-              className={`bg-card rounded-2xl p-5 transition-all duration-1000 ${
-                visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+              className={`bg-card hover:bg-[#3a2113] active:bg-[#26150d] rounded-2xl p-5 transition-all duration-1000 ${
+       visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+}`}
               }`}
             >
               <Icon size={28} className="text-accent mb-3" />
