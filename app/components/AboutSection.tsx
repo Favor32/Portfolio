@@ -17,7 +17,7 @@ const focus = [
 
 export default function AboutSection() {
   return (
-    <section id="about" className="max-w-[95rem] mx-auto px-6 md:px-8 py-16 md:py-24">
+    <section id="about" className="max-w-[95rem] mx-auto px-6 md:px-8 pt-16 md:pt-24 pb-0">
       <div className="grid lg:grid-cols-2 gap-12 items-stretch">
         <div>
           <h1 className="font-serif font-bold text-3xl md:text-4xl">Paul Omowunmi Bisola</h1>
