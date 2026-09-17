@@ -24,11 +24,11 @@ export default function ToolkitSection() {
           work.
         </p>
 
-        <div className="flex gap-15 overflow-x-auto snap-x snap-mandatory pb-4">
+        <div className="grid grid-cols-1 gap-5 md:flex md:gap-5 md:overflow-x-auto md:snap-x md:snap-mandatory md:pb-4">
           {tools.map((tool) => {
             const Icon = tool.icon;
             return (
-              <div key={tool.name} className="shrink-0 snap-start w-56 bg-card rounded-2xl p-5">
+              <div key={tool.name} className="md:shrink-0 md:snap-start w-full md:w-56 bg-card rounded-2xl p-4 md:p-5">
                 {tool.name === "Canva" ? (
                   <Image src="/icons/canva.png" alt="Canva" width={28} height={28} className="mb-5" />
                 ) : (

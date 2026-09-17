@@ -2,13 +2,13 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #681f04;
-  --foreground: #faf3e6;
-  --muted: #f0d9be;
-  --accent: #f2a93b;
-  --border: #8f3414;
-  --surface: #8f3414;
-  --card: rgba(0, 0, 0, 0.18);
+  --background: #2b1810;
+  --foreground: #f7ecd9;
+  --muted: #c9ad8c;
+  --accent: #e07a3f;
+  --border: #4a3222;
+  --surface: #3a2415;
+  --card: #46301c;
 }
 
 @theme inline {
@@ -23,7 +23,10 @@
   --font-mono: var(--font-geist-mono);
   --font-serif: var(--font-fraunces);
 }
-
+.photo-blend {
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
 html {
   scroll-behavior: smooth;
 }

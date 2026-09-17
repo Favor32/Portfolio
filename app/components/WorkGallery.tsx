@@ -50,6 +50,7 @@ const skills = [
     name: "Carousels",
     description: "Multi-slide carousel posts designed to educate, engage and hold attention scroll after scroll.",
     media: [
+      { type: "photo", src: "/gallery/carousels/photo_2_2026-08-30_03-47-24.jpg", alt: "O Gadgets sample" },
       { type: "photo", src: "/gallery/carousels/photo_3_2026-08-30_03-47-24.jpg", alt: "O Gadgets sample" },
       { type: "photo", src: "/gallery/carousels/photo_4_2026-08-30_03-47-25.jpg", alt: "O Gadgets sample" },
       { type: "photo", src: "/gallery/carousels/photo_5_2026-08-30_03-45-58.jpg", alt: "O Gadgets sample" },
@@ -62,7 +63,6 @@ const skills = [
     media: [
       { type: "photo", src: "/gallery/graphic-design/photo_1_2026-08-30_03-47-24.jpg", alt: "Graphic design sample" },
       { type: "photo", src: "/gallery/graphic-design/photo_1_2026-08-31_13-16-53.jpg", alt: "Graphic design sample" },
-      { type: "photo", src: "/gallery/graphic-design/photo_2_2026-08-30_03-47-24.jpg", alt: "Graphic design sample" },
       { type: "photo", src: "/gallery/graphic-design/photo_9_2026-08-30_03-45-58.jpg", alt: "Graphic design sample" },
     ],
   },

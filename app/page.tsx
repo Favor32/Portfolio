@@ -11,13 +11,25 @@ const highlights = [
 export default function Home() {
   return (
     <>
-      <section className="max-w-[95rem] mx-auto px-6 md:px-8 py-16 md:py-24 min-h-[600px] md:min-h-[700px]">
-  <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-stretch h-full">
-    <HeroText />
+<section className="relative overflow-hidden">
+  <div className="max-w-[95rem] mx-auto grid lg:grid-cols-2 min-h-[500px]">
+    
+    {/* Left side */}
+    <div className="px-6 md:px-8 py-16 md:py-24 flex items-center">
+      <HeroText />
+    </div>
 
     <div className="relative w-full aspect-[3/4] lg:aspect-auto lg:h-full">
-      <Image src="/hero.png" alt="Paul Omowunmi Bisola" fill sizes="480px" className="object-cover object-top" priority />
-    </div>
+  <Image
+    src="/hero.png"
+    alt="Paul Omowunmi Bisola"
+    fill
+    sizes="480px"
+    className="object-cover object-top photo-blend"
+    priority
+  />
+</div>
+
   </div>
 </section>
 
