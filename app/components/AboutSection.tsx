@@ -60,11 +60,7 @@ export default function AboutSection() {
   consistent digital presence."
 </p>
 
-<p className="mt-8 text-foreground leading-relaxed">
-  From developing content strategies and planning content to
-  creating, managing and analysing social media performance, I
-  approach every project with intention.
-</p>
+
         </div>
 
      <div className="relative w-full aspect-[3/4] lg:aspect-auto lg:h-full overflow-hidden">
