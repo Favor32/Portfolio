@@ -72,7 +72,7 @@ export default function AboutSection() {
     src="/profile.png"
     alt="Paul Omowunmi Bisola"
     fill
-    className="object-cover object-top transition-transform duration-500 hover:scale-105"
+    className="object-cover object-top photo-blend transition-transform duration-500 hover:scale-105"
     priority
   />
 </div>
