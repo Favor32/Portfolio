@@ -30,7 +30,7 @@ export default function ServicesSection() {
             <div
               key={service.title}
               style={{ transitionDelay: `${index * 100}ms` }}
-              className={`bg-card rounded-2xl p-5 transition-all duration-700 ${
+              className={`bg-card rounded-2xl p-5 transition-all duration-1000 ${
                 visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
               }`}
             >

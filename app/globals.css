@@ -2,13 +2,13 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #faf3e7;
-  --foreground: #3b2410;
-  --muted: #8b6f52;
-  --accent: #c1502e;
-  --border: #e6d9c3;
-  --surface: #e4cfae;
-  --card: rgba(255, 255, 255, 0.55);
+  --background: #120c08;
+  --foreground: #f7ecd9;
+  --muted: #c2a385;
+  --accent: #e0793e;
+  --border: #2b1c12;
+  --surface: #2b1c12;
+  --card: #3d2716;
 }
 
 @theme inline {

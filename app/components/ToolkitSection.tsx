@@ -24,7 +24,7 @@ export default function ToolkitSection() {
           work.
         </p>
 
-        <div className="grid grid-cols-1 gap-15 md:flex md:gap-5 md:overflow-x-auto md:snap-x md:snap-mandatory md:pb-4">
+        <div className="grid grid-cols-1 gap-25 md:flex md:gap-5 md:overflow-x-auto md:snap-x md:snap-mandatory md:pb-4">
           {tools.map((tool) => {
             const Icon = tool.icon;
             return (
