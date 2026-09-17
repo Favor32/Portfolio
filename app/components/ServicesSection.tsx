@@ -1,10 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { FaHashtag, FaChessKnight, FaPaintBrush, FaCalendarAlt, FaChartLine, FaRobot, FaBullhorn } from "react-icons/fa";
+import { FaChessKnight, FaPaintBrush, FaCalendarAlt, FaChartLine, FaRobot, FaBullhorn } from "react-icons/fa";
 
 const services = [
-  { title: "Social Media Management", description: "Managing and maintaining a consistent, organised and engaging social media presence.", icon: FaHashtag },
   { title: "Content Strategy", description: "Developing a clear content direction based on the brand, audience and business objectives.", icon: FaChessKnight },
   { title: "Content Creation", description: "Creating Reels, graphics, carousels, captions and other social media content.", icon: FaPaintBrush },
   { title: "Content Planning", description: "Developing content pillars, topics and calendars that keep the brand organised and consistent.", icon: FaCalendarAlt },
