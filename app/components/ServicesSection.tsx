@@ -16,20 +16,20 @@ export default function ServicesSection() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const timeout = setTimeout(() => setVisible(true), 100);
+    const timeout = setTimeout(() => setVisible(true), 300);
     return () => clearTimeout(timeout);
   }, []);
 
   return (
     <section id="services" className="max-w-[95rem] mx-auto px-6 md:px-8 py-16 md:py-24">
       <h2 className="font-serif font-bold text-2xl md:text-3xl text-accent">What I Do</h2>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-20">
         {services.map((service, index) => {
           const Icon = service.icon;
           return (
             <div
               key={service.title}
-              style={{ transitionDelay: `${index * 100}ms` }}
+              style={{ transitionDelay: `${index * 200}ms` }}
               className={`bg-card rounded-2xl p-5 transition-all duration-1000 ${
                 visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
               }`}
