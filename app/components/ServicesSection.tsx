@@ -23,7 +23,7 @@ export default function ServicesSection() {
   return (
     <section id="services" className="max-w-[95rem] mx-auto px-6 md:px-8 py-16 md:py-24">
       <h2 className="font-serif font-bold text-2xl md:text-3xl text-accent">What I Do</h2>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-30 mt-10">
         {services.map((service, index) => {
           const Icon = service.icon;
           return (
