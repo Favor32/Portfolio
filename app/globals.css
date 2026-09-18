@@ -2,13 +2,12 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #120c08;
-  --foreground: #f7ecd9;
-  --muted: #c2a385;
-  --accent: #e0793e;
-  --border: #2b1c12;
-  --surface: #2b1c12;
-  --card: #3d2716;
+  --background: #f2e3c4;
+  --foreground: #3c2415;
+  --muted: #8a6a4e;
+  --accent: #c1502e;
+  --border: #ddc9a3;
+  --card: rgba(255, 255, 255, 0.55);
 }
 
 @theme inline {
@@ -17,11 +16,25 @@
   --color-muted: var(--muted);
   --color-accent: var(--accent);
   --color-border: var(--border);
-  --color-surface: var(--surface);
   --color-card: var(--card);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-serif: var(--font-fraunces);
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+.gradient-panel {
+  background: linear-gradient(135deg, #c1502e 0%, #1d1a19 55%, #3c2415 100%);
 }
 .photo-blend {
   -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);

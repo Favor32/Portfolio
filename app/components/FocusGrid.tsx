@@ -18,17 +18,17 @@ export default function FocusGrid() {
   }, []);
 
   return (
-    <div className="grid grid-cols-2 gap-5">
+    <div className="grid grid-cols-2 gap-3 md:gap-5">
       {focus.map((item, index) => (
         <div
           key={item.title}
-          style={{ animationDelay: `${index * 400}ms` }}
-          className={`bg-card rounded-2xl p-4 transition-opacity duration-1000 ${
+          style={{ animationDelay: `${index * 150}ms` }}
+          className={`bg-white/10 backdrop-blur-sm rounded-2xl p-3 md:p-4 transition-opacity duration-700 ${
             visible ? "opacity-100 animate-gentle-bounce" : "opacity-0"
           }`}
         >
-          <h4 className="font-medium text-accent">{item.title}</h4>
-          <p className="text-sm italic mt-1">{item.desc}</p>
+          <h4 className="font-medium text-white">{item.title}</h4>
+          <p className="text-sm text-white/70 mt-1">{item.desc}</p>
         </div>
       ))}
     </div>
