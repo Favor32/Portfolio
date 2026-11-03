@@ -1,86 +1,50 @@
 import Image from "next/image";
-import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
-import FocusGrid from "./FocusGrid";
-
-const socialLinks = [
-  { name: "Instagram", url: "https://instagram.com/the_wunmipaul", icon: FaInstagram },
-  { name: "Facebook", url: "https://facebook.com/YOUR_FACEBOOK_HANDLE", icon: FaFacebook },
-  { name: "LinkedIn", url: "https://www.linkedin.com/in/olaoluwa-gbolahan-b71455270/", icon: FaLinkedin },
-];
-
-const focus = [
-  { title: "Strategy", desc: "Creating direction." },
-  { title: "Content", desc: "Creating meaningful communication." },
-  { title: "Management", desc: "Maintaining consistency." },
-  { title: "Growth", desc: "Learning from data and improving." },
-];
+import { site } from "@/data/site";
+import SocialLinks from "../ui/SocialLinks";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="max-w-[95rem] mx-auto px-6 md:px-8 pt-16 md:pt-24 pb-0">
-      <div className="grid lg:grid-cols-2 gap-12 items-stretch">
-        <div>
-          <h1 className="font-serif font-bold text-3xl md:text-4xl">Paul Omowunmi Bisola</h1>
-          <p className="text-accent font-medium mt-4 italic">Social Media Manager</p>
-
-          <p className="mt-6  font-bold italic leading-relaxed max-w-md">
-            Building intentional digital presence for businesses that want to
-            be seen, understood and remembered.
+    <section className="bg-cream">
+      <div className="grid lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]">
+        <div className="px-6 py-16 md:px-10 lg:py-28 lg:pl-16 lg:pr-14 xl:pl-24 2xl:pl-40">
+          <h1 className="font-serif text-[clamp(2.5rem,5.5vw,4.5rem)] leading-[1.05] tracking-tight">
+            About me
+          </h1>
+          <p className="mt-4 text-lg text-copper">
+            {site.name}, {site.role}
           </p>
 
-          <div className="mt-6 flex gap-4">
-  {socialLinks.map((link) => {
-    const Icon = link.icon;
-    return (
-      <a
-        key={link.name}
-        href={link.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className=" hover:text-accent hover:scale-110 transition-all duration-200"
-        aria-label={link.name}
-      >
-        <Icon size={22} />
-      </a>
-    );
-  })}
-</div>
+          <p className="mt-10 max-w-xl text-lg leading-relaxed">
+            I&rsquo;m Paul Omowunmi Bisola, a Social Media Manager focused on
+            helping businesses build a strong and purposeful presence online.
+          </p>
 
-          
-        <h2 className="font-serif font-bold text-xl md:text-2xl text-accent mt-10 mb-6">About Me</h2>
+          <p className="mt-10 max-w-xl border-l-2 border-accent pl-6 font-serif text-2xl italic leading-snug">
+            &ldquo;I combine strategy, creativity and data to help brands
+            communicate their value, connect with their target audience and
+            maintain a consistent digital presence.&rdquo;
+          </p>
 
-          <p className="text-foreground leading-relaxed">
-  I'm Paul Omowunmi Bisola, a Social Media Manager focused on
-  helping businesses build a strong and purposeful presence online.
-</p>
+          <p className="mt-10 max-w-xl leading-relaxed text-muted">
+            From developing content strategies and planning content to creating,
+            managing and analysing social media performance, I approach every
+            project with intention.
+          </p>
 
-<p className="font-serif italic text-2xl text-accent mt-8 leading-snug">
-  "I combine strategy, creativity and data to help brands communicate
-  their value, connect with their target audience and maintain a
-  consistent digital presence."
-</p>
-
-<p className="mt-8 text-foreground leading-relaxed">
-  From developing content strategies and planning content to
-  creating, managing and analysing social media performance, I
-  approach every project with intention.
-</p>
+          <SocialLinks className="mt-10 text-chocolate" />
         </div>
 
-     <div className="relative w-full aspect-[3/4] lg:aspect-auto lg:h-full overflow-hidden">
-  <Image
-    src="/profile.png"
-    alt="Paul Omowunmi Bisola"
-    fill
-    className="object-cover object-top photo-blend transition-transform duration-500 hover:scale-105"
-    priority
-  />
-</div>
+        <div className="relative aspect-[4/5] bg-taupe sm:aspect-[5/4] lg:aspect-auto lg:min-h-[40rem]">
+          <Image
+            src="/profile.png"
+            alt="Paul Omowunmi Bisola"
+            fill
+            priority
+            sizes="(min-width: 1024px) 42vw, 100vw"
+            className="object-contain object-bottom"
+          />
+        </div>
       </div>
-
-      
-
-    
     </section>
   );
 }

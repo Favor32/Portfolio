@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import CapCutIcon from "./icons/CapCutIcon";
 import MetaAdsManagerIcon from "./icons/MetaAdsManagerIcon";
@@ -16,55 +14,44 @@ const tools = [
   { name: "AI Video Creation Tools", description: "AI assisted visual concepts and video creation.", icon: AIVideoCreationIcon },
 ];
 
+function ToolCard({ tool }: { tool: (typeof tools)[number] }) {
+  const Icon = tool.icon;
+  return (
+    <div className="shrink-0 w-64 bg-black rounded-2xl p-5">
+      {tool.name === "Canva" ? (
+        <Image src="/icons/canva.png" alt="Canva" width={28} height={28} className="mb-3" />
+      ) : (
+        Icon && <Icon size={28} className="text-accent mb-3" />
+      )}
+      <h3 className="font-medium text-foreground">{tool.name}</h3>
+      <p className="text-sm text-muted mt-1 leading-relaxed">{tool.description}</p>
+    </div>
+  );
+}
+
 export default function ToolkitSection() {
   return (
-    <section id="toolkit" className="w-full gradient-panel py-16 md:py-24">
+    <section id="toolkit" className="w-full bg-surface py-16 md:py-24">
       <div className="max-w-[95rem] mx-auto px-6 md:px-8">
-        <h2 className="font-serif font-bold text-2xl md:text-3xl text-white">Tools I Use</h2>
-        <p className="text-white/70 mt-4 mb-10 max-w-md leading-relaxed">
+        <h2 className="font-serif font-bold text-2xl md:text-3xl text-accent">Tools I Use</h2>
+        <p className="text-muted mt-4 mb-10 max-w-md leading-relaxed">
           I use technology to improve my creative process and efficiency while
           keeping strategy, creativity and human judgement at the centre of my
           work.
         </p>
 
-        {/* Mobile: plain vertical list, no duplicate */}
-<div className="grid grid-cols-1 gap-5 md:hidden">
-  {tools.map((tool) => {
-    const Icon = tool.icon;
-    return (
-      <div key={tool.name} className="w-full bg-white/10 backdrop-blur-sm rounded-2xl p-4">
-        {tool.name === "Canva" ? (
-          <Image src="/icons/canva.png" alt="Canva" width={28} height={28} className="mb-3" />
-        ) : (
-          Icon && <Icon size={28} className="text-[#f6c453] mb-3" />
-        )}
-        <h3 className="font-medium text-white">{tool.name}</h3>
-        <p className="text-sm text-white/70 mt-1 leading-relaxed">{tool.description}</p>
-      </div>
-    );
-  })}
-</div>
-
-{/* Desktop: auto-sliding marquee with duplicated list for seamless loop */}
-<div className="hidden md:block overflow-hidden">
-  <div className="flex gap-5 w-max animate-marquee">
-    {[...tools, ...tools].map((tool, i) => {
-      const Icon = tool.icon;
-      return (
-        <div key={`${tool.name}-${i}`} className="shrink-0 w-56 bg-white/10 backdrop-blur-sm rounded-2xl p-5">
-          {tool.name === "Canva" ? (
-            <Image src="/icons/canva.png" alt="Canva" width={28} height={28} className="mb-3" />
-          ) : (
-            Icon && <Icon size={28} className="text-[#f6c453] mb-3" />
-          )}
-          <h3 className="font-medium text-white">{tool.name}</h3>
-          <p className="text-sm text-white/70 mt-1 leading-relaxed">{tool.description}</p>
+        <div className="grid grid-cols-1 gap-5 md:hidden">
+          {tools.map((tool) => (
+            <ToolCard key={tool.name} tool={tool} />
+          ))}
         </div>
-      );
-    })}
-  </div>
-</div>
-            
+      </div>
+
+      <div className="hidden md:block overflow-hidden mt-10">
+        <div className="flex gap-5 w-max animate-marquee">
+          {[...tools, ...tools].map((tool, i) => (
+            <ToolCard key={`${tool.name}-${i}`} tool={tool} />
+          ))}
         </div>
       </div>
     </section>

@@ -11,45 +11,48 @@ const highlights = [
 export default function Home() {
   return (
     <>
-<section className="relative overflow-hidden">
-  <div className="max-w-[95rem] mx-auto grid lg:grid-cols-2 min-h-[500px]">
-    
-    {/* Left side */}
-    <div className="px-6 md:px-8 py-16 md:py-24 flex items-center">
-      <HeroText />
-    </div>
+      <section className="relative w-full min-h-screen flex items-center overflow-hidden">
+        <div className="max-w-[95rem] mx-auto px-6 md:px-8 w-full">
+          <div className="relative z-10 max-w-xl lg:pr-[38%]">
+            <HeroText />
+          </div>
 
-    <div className="relative w-full aspect-[3/4] lg:aspect-auto lg:h-full">
-  <Image
-    src="/hero.png"
-    alt="Paul Omowunmi Bisola"
-    fill
-    sizes="480px"
-    className="object-cover object-top photo-blend"
-    priority
-  />
-</div>
+    <div className="relative z-10 max-w-xl lg:pr-8">
+            <Image
+              src="/hero.png"
+              alt="Paul Omowunmi Bisola"
+              fill
+              sizes="90vw"
+              className="object-cover object-top photo-blend rounded-2xl"
+              priority
+            />
+          </div>
+        </div>
 
-  </div>
-</section>
+        <div className="hidden lg:block absolute inset-y-0 right-0 w-[38%]">
+          <Image
+            src="/hero.png"
+            alt="Paul Omowunmi Bisola"
+            fill
+            sizes="42vw"
+            className="object-cover object-top"
+            priority
+          />
+        </div>
+      </section>
 
       <section className="w-full bg-surface py-16 md:py-24">
         <div className="max-w-[95rem] mx-auto px-6 md:px-8">
           <h2 className="font-serif font-bold text-2xl md:text-3xl text-accent">A Quick Look</h2>
           <div className="grid sm:grid-cols-3 gap-5 mt-10">
             {highlights.map((item) => (
-             <div
-  key={item.title}
-  className="bg-card rounded-2xl p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_-5px_var(--accent)]"
->
-  <h3 className="font-medium">{item.title}</h3>
-  <p className="text-sm text-muted mt-2 leading-relaxed">{item.description}</p>
-</div>
+              <div key={item.title} className="bg-card rounded-2xl p-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_30px_-5px_var(--accent)]">
+                <h3 className="font-medium text-foreground">{item.title}</h3>
+                <p className="text-sm text-muted mt-2 leading-relaxed">{item.description}</p>
+              </div>
             ))}
           </div>
-          <Link href="/services" className="inline-block mt-8 text-accent font-medium hover:underline">
-            See all services →
-          </Link>
+          <Link href="/services" className="inline-block mt-8 text-accent font-medium hover:underline">See all services →</Link>
         </div>
       </section>
     </>
